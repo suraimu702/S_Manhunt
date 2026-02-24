@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Roll Select",
+    "color": "#47ffaf"
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": {
+        "text": "ランナー",
+        "color": "#38ff4f"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger manhunt_trigger set 1"
+      }
+    },
+    {
+      "label": {
+        "text": "ハンター",
+        "color": "#fe3434"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger manhunt_trigger set 2"
+      }
+    },
+    {
+      "label": {
+        "text": "観戦者",
+        "color": "#47fffc"
+      },
+            "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger manhunt_trigger set 3"
+      }
+    }
+  ]
+}

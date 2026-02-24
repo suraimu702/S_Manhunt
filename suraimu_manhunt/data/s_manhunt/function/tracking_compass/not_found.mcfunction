@@ -1,0 +1,1 @@
+title @s actionbar {"text":"このディメンションには追跡対象が存在しません","color":"red"}

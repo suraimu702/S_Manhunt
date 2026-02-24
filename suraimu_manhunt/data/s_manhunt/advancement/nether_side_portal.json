@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:acacia_stairs"
+    },
+    "title": "",
+    "description": "",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "s_manhunt:root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "team": "runner",
+          "location": {
+            "dimension": "minecraft:the_nether",
+            "block": {
+              "blocks": "minecraft:nether_portal"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "s_manhunt:game/nether_side_portal"
+  }
+}

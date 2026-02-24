@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "ManHunt Settings",
+    "color": "#fff833"
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": {
+        "text": "ゲーム開始",
+        "color": "#4de9fe"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function s_manhunt:game/start"
+      }
+    },
+    {
+      "label": {
+        "text": "スポーンポイント設定",
+        "color": "#7aff7d"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function s_manhunt:game/point_set"
+      }
+    }
+  ]
+}
