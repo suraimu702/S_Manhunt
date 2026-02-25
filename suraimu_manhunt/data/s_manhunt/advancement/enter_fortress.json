@@ -13,10 +13,12 @@
   "parent": "s_manhunt:root",
   "criteria": {
     "a": {
-      "trigger": "minecraft:player_killed_entity",
+      "trigger": "minecraft:location",
       "conditions": {
-        "entity": {
-          "type": "minecraft:ender_dragon"
+        "player": {
+          "location": {
+            "structures": "minecraft:fortress"
+          }
         }
       }
     }
@@ -27,6 +29,6 @@
     ]
   ],
   "rewards": {
-    "function": "s_manhunt:game/kill_ender_dragon"
+    "function": "s_manhunt:game/enter_fortress"
   }
 }

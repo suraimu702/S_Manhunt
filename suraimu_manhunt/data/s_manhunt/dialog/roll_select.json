@@ -4,6 +4,7 @@
     "text": "Roll Select",
     "color": "#47ffaf"
   },
+  "can_close_with_escape": false,
   "columns": 1,
   "actions": [
     {
@@ -31,7 +32,7 @@
         "text": "観戦者",
         "color": "#47fffc"
       },
-            "action": {
+      "action": {
         "type": "minecraft:run_command",
         "command": "trigger manhunt_trigger set 3"
       }

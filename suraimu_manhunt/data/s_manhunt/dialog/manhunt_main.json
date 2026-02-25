@@ -2,7 +2,7 @@
   "type": "minecraft:multi_action",
   "title": {
     "text": "ManHunt Settings",
-    "color": "#fff833"
+    "color": "#ff4733"
   },
   "columns": 1,
   "actions": [
@@ -24,6 +24,16 @@
       "action": {
         "type": "minecraft:run_command",
         "command": "function s_manhunt:game/point_set"
+      }
+    },
+    {
+      "label": {
+        "text": "詳細設定",
+        "color": "#fff957"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "s_manhunt:advanced_settings"
       }
     }
   ]

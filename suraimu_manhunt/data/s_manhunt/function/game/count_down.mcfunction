@@ -29,7 +29,7 @@ execute if score #count_down temp matches 40 run playsound ui.button.click maste
 execute if score #count_down temp matches 20 run title @a title {text:"1","color":"dark_red"}
 execute if score #count_down temp matches 20 run playsound ui.button.click master @a ~ ~ ~ 1 1.5 1
 
-execute if score #count_down temp matches 0 run function s_manhunt:game/start_confirm
+execute if score #count_down temp matches 0 run function s_manhunt:game/start_confirm with storage s_manhunt:
 
 execute if score #count_down temp matches 1.. run schedule function s_manhunt:game/count_down 1t append
 

@@ -1,0 +1,116 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "ManHunt Advanced Settings",
+    "color": "#fff957"
+  },
+  "inputs": [
+    {
+      "type": "minecraft:single_option",
+      "key": "difficulty",
+      "label": {
+        "text": "ゲーム難易度",
+        "color": "#76fcfe"
+      },
+      "options": [
+        {
+          "id": "easy",
+          "display": {
+            "text": "イージー",
+            "color": "#6bff75"
+          },
+          "initial": true
+        },
+        {
+          "id": "normal",
+          "display": {
+            "text": "ノーマル",
+            "color": "#fffa6b"
+          }
+        },
+        {
+          "id": "hard",
+          "display": {
+            "text": "ハード",
+            "color": "#fe5858"
+          }
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "runner_win_condition",
+      "label": {
+        "text": "ランナー勝利条件",
+        "color": "#76fcfe"
+      },
+      "options": [
+        {
+          "id": "defeat_ender_dragon",
+          "display": {
+            "text": "エンドラ討伐",
+            "color": "#ac08e7"
+          },
+          "initial": true
+        },
+        {
+          "id": "enter_nether",
+          "display": {
+            "text": "ネザー到達",
+            "color": "#f71818"
+          }
+        },
+        {
+          "id": "enter_fortress",
+          "display": {
+            "text": "ネザー要塞到達",
+            "color": "#b40808"
+          }
+        }
+      ]
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "give_tracking_paper",
+      "label": {
+        "text": "トラッキングペーパー配布",
+        "color": "#76fcfe"
+      },
+      "on_true": "true",
+      "on_false": "false"
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "start_handicap",
+      "label": {
+        "text": "スタート時ハンデ",
+        "color": "#76fcfe"
+      },
+      "on_true": "true",
+      "on_false": "false"
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "runner_hardcore",
+      "label": {
+        "text": "ランナーハードコア",
+        "color": "#fe3939"
+      },
+      "on_true": "true",
+      "on_false": "false"
+    }
+  ],
+  "actions": [
+    {
+      "label": {
+        "text": "決定",
+        "color": "#f5f5f5"
+      },
+      "width": 100,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "data merge storage s_manhunt: {difficulty:$(difficulty),give_tracking_paper:$(give_tracking_paper),runner_hardcore:$(runner_hardcore),runner_win_condition:$(runner_win_condition),start_handicap:$(start_handicap)}"
+      }
+    }
+  ]
+}

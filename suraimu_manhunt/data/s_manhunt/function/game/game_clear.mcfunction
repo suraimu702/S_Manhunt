@@ -14,7 +14,4 @@ particle minecraft:note ~ ~0.5 ~ 1 1 1 1 30
 
 playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~ 1.5 1.5 0
 
-tellraw @a [{text:""},{"text":"<",color:"gray"},{text:"M",color:green},{text:"H",color:"red"},{text:">",color:"gray"},{"text":"エンダードラゴンが討伐されたため、ランナーの勝利となります","color":"yellow"}]
-
-##後処理
-advancement revoke @s only s_manhunt:kill_ender_dragon
+tellraw @a [{text:""},{"text":"<",color:"gray"},{text:"M",color:green},{text:"H",color:"red"},{text:">",color:"gray"},{"text":"クリア条件が達成されたため、ランナーの勝利となります","color":"yellow"}]

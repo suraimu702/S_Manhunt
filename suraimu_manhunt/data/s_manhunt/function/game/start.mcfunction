@@ -1,3 +1,6 @@
+##in_matchチェック
+execute if data storage s_manhunt: {in_match:1b} run return run function s_manhunt:game/start_fail
+
 ##スポーンポイントチェック
 execute unless entity @e[tag=pos_set] run return run function s_manhunt:game/start_fail
 
