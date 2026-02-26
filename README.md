@@ -2,7 +2,6 @@
 ・Minecraft Java 1.21.11　マルチ(vannila推奨)サーバー用
 
 ＜導入方法について＞
-1. 動画リンクから飛んだGitHubの画面にて、緑色の「Code」をクリックし、「Download ZIP」をクリック
 2. ダウンロードしたファイルを展開
 3. 中に入っているsuraimu_manhuntファイルを(サーバーフォルダ)/world/datapacks/に追加
 4. 導入完了！
