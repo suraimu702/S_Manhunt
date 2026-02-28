@@ -26,3 +26,5 @@ gamerule pvp false
 gamerule send_command_feedback false
 gamerule advance_time false
 gamerule advance_weather false
+
+data merge storage s_manhunt: {difficulty:easy,give_tracking_paper:1b,runner_hardcore:0b,runner_win_condition:defeat_ender_dragon,start_handicap:1b}
